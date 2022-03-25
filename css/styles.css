@@ -67,6 +67,12 @@ img {
   width: 150px;
 }
 
-.form .images {
-  width: 100vw;
+#grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.cell {
+  margin: 10px;
+  border: 2px solid black;
 }
