@@ -19,7 +19,22 @@ $(document).ready(function() {
 
   $("#q3").click(function() {
     $(".food").addClass("hidden");
-    $("").removeClass("hidden");
+    $(".flavor").removeClass("hidden");
+  })
+
+  $("#q4").click(function() {
+    $(".flavor").addClass("hidden");
+    $(".vacation").removeClass("hidden");
+  })
+
+  $("#q5").click(function() {
+    $(".food").addClass("hidden");
+    $(".flavor").removeClass("hidden");
+  })
+
+  $("#q6").click(function() {
+    $(".food").addClass("hidden");
+    $(".flavor").removeClass("hidden");
   })
 
 

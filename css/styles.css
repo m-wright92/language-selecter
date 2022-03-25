@@ -7,9 +7,10 @@
   width: 30%;
 }
 
-#q1 {
+#q1, #q2, #q3, #q4, #q5, #q6 {
   border: 2px solid black;
   background-color: rgb(206, 206, 206);
+  padding: 2px;
 }
 
 .welcome {
