@@ -32,13 +32,20 @@ $(document).ready(function() {
     $(".images").removeClass("hidden");
   })
 
-  $("#q6").click(function() {
-    $(".images").addClass("hidden");
-    $(".results").removeClass("hidden");
-  })
+  $(function() {
+    $(".images").click(function() {
+      let fired_button = $("button").val();
+      alert(fired_button);
+    // $(".images").addClass("hidden");
+    // $(".results").removeClass("hidden");
+    });
+  });
 
 
-})
+});
+
+
+
 
 // for finding value of users name
 // const name = $("input#users-name").val();
