@@ -28,13 +28,13 @@ $(document).ready(function() {
   })
 
   $("#q5").click(function() {
-    $(".food").addClass("hidden");
-    $(".flavor").removeClass("hidden");
+    $(".vacation").addClass("hidden");
+    $(".images").removeClass("hidden");
   })
 
   $("#q6").click(function() {
-    $(".food").addClass("hidden");
-    $(".flavor").removeClass("hidden");
+    $(".images").addClass("hidden");
+    $(".results").removeClass("hidden");
   })
 
 

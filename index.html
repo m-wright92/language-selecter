@@ -13,29 +13,37 @@
       <h1>So you think you want to be a programmer?</h1>
     </div>
     <div class="welcome">
-      <h2>Take our little quiz to see what language might be best for you!</h2>
+      <h2>Take our little quiz to see what language might be best for <u><em>you</em></u>!</h2>
     </div>
     <div class="welcome">
       <button class="btn btn-lg" id="begin">Let's begin!</button>
     </div>
   </div>
-
+<!-- name input -->
   <div class="form name hidden">
     <div class="container">
       <div class="form-group row">
-        <label for="users-name" class="col-sm-3">What is your name?</label>
-        <div class="col-sm-9">
+        <div>
+          <label for="users-name" >What is your name?</label>
+        </div>
+        <div>
           <input type="text" class="form-control" id="users-name" placeholder="Your Name Here">
         </div>
         <small>Just so we can make your results more personal.</small>
       </div>
-      <button class="btn" id="q1">Submit!</button>
+      <br>
+      <div>
+        <button class="btn" id="q1">Next question</button>
+      </div>
     </div>
   </div>
-
+<!-- color input -->
   <div class="form colors hidden">
     <div class="container">
-      <label>What is your favorite of these colors?</label>
+      <div>
+        <label class="title">What is your favorite of these <u>colors</u>?</label>
+      </div>
+      <br>
       <select class="form" id="question2">
         <option class="none">Select one</option>
         <option id="red">Red</option>
@@ -45,13 +53,19 @@
         <option id="yellow">Yellow</option>
         <option id="black">Black</option>
       </select>
-      <button class="btn" id="q2">Submit!</button>
+    </div>
+    <br>
+    <div>
+      <button class="btn" id="q2">Next question</button>
     </div>
   </div>
-
+<!-- food input -->
   <div class="form food hidden">
     <div class="container">
-      <label>What is your favorite of these foods?</label>
+      <div>
+        <label class="title">What is your favorite of these <u>foods</u>?</label>
+      </div>
+      <br>
       <select class="form" id="question3">
         <option class="none">Select one</option>
         <option id="red">Pizza</option>
@@ -61,13 +75,17 @@
         <option id="yellow">Burgers</option>
         <option id="black">Salad</option>
       </select>
-      <button class="btn" id="q3">Submit!</button>
+    </div>
+    <br>
+    <div>
+      <button class="btn" id="q3">Next question</button>
     </div>
   </div>
-
+<!-- flavor input -->
   <div class="form flavor hidden">
     <div class="container">
-      <label>What's your favorite ice cream flavor?</label>
+      <label class="title">What's your favorite <u>ice cream flavor</u>?</label>
+      <br>
       <div class="radio">
         <label>
           <input type="radio" name="flavor" value="chocolate" checked>
@@ -92,13 +110,17 @@
           Mint Chocolate Chip
         </label>
       </div>
-      <button class="btn" id="q4">Submit!</button>
+      <br>
+      <div>
+        <button class="btn" id="q4">Next question</button>
+      </div>
     </div>
   </div>
-
+<!-- vacation input -->
   <div class="form vacation hidden">
     <div class="container">
-      <label>What is your ideal vacation?</label>
+      <label>What is your <u>ideal vacation</u>?</label>
+      <br>
       <div class="radio">
         <label>
           <input type="radio" name="location" value="city" checked>
@@ -123,13 +145,33 @@
           A "staycation" at home
         </label>
       </div>
-      <button class="btn" id="q5">Submit!</button>
+      <br>
+      <div>
+        <button class="btn" id="q5">Next question</button>
+      </div>
     </div>
   </div>
-
+<!-- image input -->
   <div class="form images hidden">
     <div class="container">
       <label>Pick your favorite tech company!</label>
+      <br>
+      <div class="row">
+        <div class="col6">
+          <button type="button" id="apple"><img src="img/apple.png"></button>
+        </div>
+        <div class="col6">
+          <button type="button" id="microsoft"><img src="img/microsoft.png"></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col6">
+          <button type="button" id="google"><img src="img/google.png"></button>
+        </div>
+        <div class="col6">
+          <button type="button" id="meta"><img src="img/meta.png"></button>
+        </div>
+      </div>
     </div>
   </div>
 
