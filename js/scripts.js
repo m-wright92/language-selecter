@@ -1,52 +1,53 @@
 $(document).ready(function() {
-  $(".images").submit(function(event){
-    event.preventDefault();
-    const name = $("input#users-name").val().trim();
-    const color = $("select#question2").val();
+  // $(".images").submit(function(event){
+    // event.preventDefault();
+  const name = $("input#users-name").val().trim();
+  const color = $("select#question2").val();
 
-    const img = ""
-      
-
-
-    $("#begin").click(function() {
-      $(".intro").addClass("hidden");
-      $(".name").removeClass("hidden");
-    })
+  const img = $(imageSelect).val()
     
-    $("#q1").click(function() {
-      $(".name").addClass("hidden");
-      $(".colors").removeClass("hidden");
-    })
 
-    $("#q2").click(function() {
-      $(".colors").addClass("hidden");
-      $(".food").removeClass("hidden");
-    })
 
-    $("#q3").click(function() {
-      $(".food").addClass("hidden");
-      $(".flavor").removeClass("hidden");
-    })
+  $("#begin").click(function() {
+    $(".intro").addClass("hidden");
+    $(".name").removeClass("hidden");
+  })
+  
+  $("#q1").click(function() {
+    $(".name").addClass("hidden");
+    $(".colors").removeClass("hidden");
+  })
 
-    $("#q4").click(function() {
-      $(".flavor").addClass("hidden");
-      $(".vacation").removeClass("hidden");
-    })
+  $("#q2").click(function() {
+    $(".colors").addClass("hidden");
+    $(".food").removeClass("hidden");
+  })
 
-    $("#q5").click(function() {
-      $(".vacation").addClass("hidden");
-      $(".images").removeClass("hidden");
-    });
+  $("#q3").click(function() {
+    $(".food").addClass("hidden");
+    $(".flavor").removeClass("hidden");
+  })
+
+  $("#q4").click(function() {
+    $(".flavor").addClass("hidden");
+    $(".vacation").removeClass("hidden");
+  })
+
+  $("#q5").click(function() {
+    $(".vacation").addClass("hidden");
+    $(".images").removeClass("hidden");
   });
+});
 
   function imageSelect() {
-    if (this === $("#img1")) {
+    if (this === "#img1") {
       let img = "apple";
-    } else if (this === $("#img2")) {
+      console.log(img)
+    } else if (this === "#img2") {
       let img = "microsoft";
     }
   }
-});
+// });
 
   
   // $("button#img1").click(function() {
