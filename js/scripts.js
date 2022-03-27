@@ -3,8 +3,12 @@ $(document).ready(function() {
     // event.preventDefault();
   const name = $("input#users-name").val().trim();
   const color = $("select#question2").val();
+  const food = $("select#question3").val();
+  const flavor = $("input:radio[name=flavor]:checked").val();
+  const vacation = $("input:radio[name=location]:checked").val();
+  const image = $(".grid#cell").val();
 
-  const img = $(imageSelect).val()
+
     
 
 
@@ -39,14 +43,10 @@ $(document).ready(function() {
   });
 });
 
-  function imageSelect() {
-    if (this === "#img1") {
-      let img = "apple";
-      console.log(img)
-    } else if (this === "#img2") {
-      let img = "microsoft";
-    }
-  }
+  // function imageSelect() {
+  //   if ("img1" === true)
+  //   alert("img")
+  // }
 // });
 
   
