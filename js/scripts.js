@@ -18,11 +18,11 @@ $(document).ready(function() {
 
   $("#begin").click(function() {
     $(".intro").addClass("hidden");
-    $(".name").removeClass("hidden");
+    $(".name-input").removeClass("hidden");
   })
   
   $("#q1").click(function() {
-    $(".name").addClass("hidden");
+    $(".name-input").addClass("hidden");
     $(".colors").removeClass("hidden");
   })
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 function surveyResult(name, question1, question2, question3, question4) {
   if (name !== "" && question1 === "Red" && question2 === "Pizza" && question3 === "chocolate" && question4 === "city" && $(".images").hasClass("hidden2")) {
-      $("#ruby").removeClass("hidden");
+      $("#ruby, .name").removeClass("hidden");
       $(".name").text(name);
   // }else {
   //   $(".name").text(name)

@@ -65,7 +65,14 @@ u {
   font-weight: bold;
 }
 
-[type=image] {
+/* [type=image] {
+  align-items: center;
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+} */
+
+img {
   align-items: center;
   cursor: pointer;
   height: 150px;
