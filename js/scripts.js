@@ -1,14 +1,18 @@
 $(document).ready(function() {
-  // $(".images").submit(function(event){
-    // event.preventDefault();
+  $(".survey").submit(function(event){
+    event.preventDefault();
+
   const name = $("input#users-name").val().trim();
-  const color = $("select#question2").val();
-  const food = $("select#question3").val();
-  const flavor = $("input:radio[name=flavor]:checked").val();
-  const vacation = $("input:radio[name=location]:checked").val();
-  const image = $(".grid#cell").val();
+  const question1 = $("select#question2").val();
+  const question2 = $("select#question3").val();
+  const question3 = $("input:radio[name=flavor]:checked").val();
+  const question4 = $("input:radio[name=location]:checked").val();
 
+  surveyResult(name, question1, question2, question3, question4);
+  });
+  
 
+  
     
 
 
@@ -41,13 +45,25 @@ $(document).ready(function() {
     $(".vacation").addClass("hidden");
     $(".images").removeClass("hidden");
   });
+
+  $(".images").click(function() {
+    $(".images").addClass("hidden2");
+  })
 });
 
-  // function imageSelect() {
-  //   if ("img1" === true)
-  //   alert("img")
-  // }
-// });
+function surveyResult(name, question1, question2, question3, question4) {
+  if (name === "") {
+    alert("missing input");
+    
+  }else if (name !== "" && question1 === "Red" && question2 === "Pizza" && question3 === "chocolate" && question4 === "city" && $(".images").hasClass("hidden2") === true){
+      $("#ruby").removeClass("hidden");
+  } else {
+    alert("why is this happening");
+  }
+}
+
+
+
 
   
   // $("button#img1").click(function() {

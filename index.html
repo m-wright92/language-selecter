@@ -19,168 +19,176 @@
       <button class="btn btn-lg" id="begin">Let's begin!</button>
     </div>
   </div>
-  <!-- <form class="survey"> -->
-  <div class="form name hidden">
-    <div class="container">
-      <div class="form-group row">
+  <form class="survey">
+<!-- name input -->
+    <div class="form name hidden">
+      <div class="container">
+        <div class="form-group row">
+          <div>
+            <label for="users-name" >What is your name?</label>
+          </div>
+          <div>
+            <input type="text" class="form-control" id="users-name" placeholder="Your Name Here">
+          </div>
+          <small>Just so we can make your results more personal.</small>
+        </div>
+        <br>
         <div>
-          <label for="users-name" >What is your name?</label>
+          <button class="btn" id="q1">Next question</button>
         </div>
+      </div>
+    </div>
+  <!-- color input -->
+    <div class="form colors hidden">
+      <div class="container">
         <div>
-          <input type="text" class="form-control" id="users-name" placeholder="Your Name Here">
+          <label class="title">What is your favorite of these <u>colors</u>?</label>
         </div>
-        <small>Just so we can make your results more personal.</small>
+        <br>
+        <select class="form" id="question2">
+          <option>Select one</option>
+          <option>Red</option>
+          <option>Green</option>
+          <option>Blue</option>
+          <option>Orange</option>
+          <option>Yellow</option>
+          <option>Black</option>
+        </select>
       </div>
       <br>
       <div>
-        <button class="btn" id="q1">Next question</button>
+        <button class="btn" id="q2">Next question</button>
       </div>
     </div>
-  </div>
-<!-- color input -->
-  <div class="form colors hidden">
-    <div class="container">
-      <div>
-        <label class="title">What is your favorite of these <u>colors</u>?</label>
-      </div>
-      <br>
-      <select class="form" id="question2">
-        <option class="none">Select one</option>
-        <option id="red">Red</option>
-        <option id="green">Green</option>
-        <option id="blue">Blue</option>
-        <option id="orange">Orange</option>
-        <option id="yellow">Yellow</option>
-        <option id="black">Black</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <button class="btn" id="q2">Next question</button>
-    </div>
-  </div>
-<!-- food input -->
-  <div class="form food hidden">
-    <div class="container">
-      <div>
-        <label class="title">What is your favorite of these <u>foods</u>?</label>
-      </div>
-      <br>
-      <select class="form" id="question3">
-        <option class="none">Select one</option>
-        <option id="red">Pizza</option>
-        <option id="green">Sushi</option>
-        <option id="blue">Tacos</option>
-        <option id="orange">Pasta</option>
-        <option id="yellow">Burgers</option>
-        <option id="black">Salad</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <button class="btn" id="q3">Next question</button>
-    </div>
-  </div>
-<!-- flavor input -->
-  <div class="form flavor hidden">
-    <div class="container">
-      <label class="title">What's your favorite <u>ice cream flavor</u>?</label>
-      <br>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="chocolate" checked>
-          Chocolate
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="vanilla">
-          Vanilla
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="rocky">
-          Rocky Road
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="mint">
-          Mint Chocolate Chip
-        </label>
+  <!-- food input -->
+    <div class="form food hidden">
+      <div class="container">
+        <div>
+          <label class="title">What is your favorite of these <u>foods</u>?</label>
+        </div>
+        <br>
+        <select class="form" id="question3">
+          <option>Select one</option>
+          <option>Pizza</option>
+          <option>Sushi</option>
+          <option>Tacos</option>
+          <option>Pasta</option>
+          <option>Burgers</option>
+          <option>Salad</option>
+        </select>
       </div>
       <br>
       <div>
-        <button class="btn" id="q4">Next question</button>
+        <button class="btn" id="q3">Next question</button>
       </div>
     </div>
-  </div>
-<!-- vacation input -->
-  <div class="form vacation hidden">
-    <div class="container">
-      <label>What is your <u>ideal vacation</u>?</label>
-      <br>
-      <div class="radio2">
-        <label>
-          <input type="radio" name="location" value="city" checked>
-          Travel to a city you've never been
-        </label>
-      </div>
-      <div class="radio2">
-        <label>
-          <input type="radio" name="location" value="camp">
-          Go camping
-        </label>
-      </div>
-      <div class="radio2">
-        <label>
-          <input type="radio" name="location" value="visit">
-          Visit friends/family
-        </label>
-      </div>
-      <div class="radio2">
-        <label>
-          <input type="radio" name="location" value="home">
-          A "staycation" at home
-        </label>
-      </div>
-      <br>
-      <div>
-        <button class="btn" id="q5">Next question</button>
-      </div>
-    </div>
-  </div>
-<!-- image input -->
-  <div class="form images hidden">
-    <div class="container">
-      <label>Pick your favorite tech company and then view your results!</label>
-      <br>
-      <div id="grid">
-        <div class="cell">
-          <input id="apple"  type="image"><img src="img/apple.png"></button>
+  <!-- flavor input -->
+    <div class="form flavor hidden">
+      <div class="container">
+        <label class="title">What's your favorite <u>ice cream flavor</u>?</label>
+        <br>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
         </div>
-        <div class="cell">
-          <input id="microsoft" type="button" value="microsoft"><img src="img/microsoft.png"></button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
         </div>
-        <div class="cell">
-          <input id="google" type="button" value="google"><img src="img/google.png"></button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="rocky">
+            Rocky Road
+          </label>
         </div>
-        <div class="cell">
-          <input id="meta" type="button" value="meta"><img src="img/meta.png"></button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="mint">
+            Mint Chocolate Chip
+          </label>
+        </div>
+        <br>
+        <div>
+          <button class="btn" id="q4">Next question</button>
         </div>
       </div>
     </div>
-  </div>
+  <!-- vacation input -->
+    <div class="form vacation hidden">
+      <div class="container">
+        <label>What is your <u>ideal vacation</u>?</label>
+        <br>
+        <div class="radio2">
+          <label>
+            <input type="radio" name="location" value="city" checked>
+            Travel to a city you've never been
+          </label>
+        </div>
+        <div class="radio2">
+          <label>
+            <input type="radio" name="location" value="camp">
+            Go camping
+          </label>
+        </div>
+        <div class="radio2">
+          <label>
+            <input type="radio" name="location" value="visit">
+            Visit friends/family
+          </label>
+        </div>
+        <div class="radio2">
+          <label>
+            <input type="radio" name="location" value="home">
+            A "staycation" at home
+          </label>
+        </div>
+        <br>
+        <div>
+          <button class="btn" id="q5">Next question</button>
+        </div>
+      </div>
+    </div>
+  <!-- image input -->
+    <div class="form images hidden">
+      <div class="container">
+        <label>Pick your favorite tech company and then view your results!</label>
+        <br>
+        <div id="grid">
+          <div class="cell">
+            <input id="apple"  type="image" src="img/apple.png">
+          </div>
+          <div class="cell">
+            <input id="microsoft" type="image" src="img/microsoft.png">
+          </div>
+          <div class="cell">
+            <input id="google" type="image" src="img/google.png">
+          </div>
+          <div class="cell">
+            <input id="meta" type="image" src="img/meta.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
   <!-- results -->
-  <div class="ruby hidden">
+  <div class="results">
+    <div id="ruby" class="hidden">
+      <h1>Well <span class="name"></span>, it looks like Ruby is the choice for you!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo at incidunt minus, esse, doloremque magnam ad praesentium recusandae pariatur eligendi iste animi temporibus necessitatibus aperiam quisquam, a dolores commodi delectus.</p>
+    </div>
 
-  </div>
-  <div class="c# hidden">
-
-  </div>
-  <div class="javascript hidden">
-
+    <div id="c#" class="hidden">
+      <h1>Well <span class="name"></span>, it looks like C# is the choice for you!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo at incidunt minus, esse, doloremque magnam ad praesentium recusandae pariatur eligendi iste animi temporibus necessitatibus aperiam quisquam, a dolores commodi delectus.</p>
+    </div>
+    <div id="javascript" class="hidden">
+      <h1>Well <span class="name"></span>, it looks like JavaScript is the choice for you!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo at incidunt minus, esse, doloremque magnam ad praesentium recusandae pariatur eligendi iste animi temporibus necessitatibus aperiam quisquam, a dolores commodi delectus.</p>
+    </div>
   </div>
 
 
