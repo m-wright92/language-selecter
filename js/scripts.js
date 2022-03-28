@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".survey").submit(function(event){
     event.preventDefault();
 
-  const name = $("input#users-name").val().trim();
+  const name = $("#users-name").val().trim();
   const question1 = $("select#question2").val();
   const question2 = $("select#question3").val();
   const question3 = $("input:radio[name=flavor]:checked").val();
@@ -52,13 +52,11 @@ $(document).ready(function() {
 });
 
 function surveyResult(name, question1, question2, question3, question4) {
-  if (name === "") {
-    alert("missing input");
-    
-  }else if (name !== "" && question1 === "Red" && question2 === "Pizza" && question3 === "chocolate" && question4 === "city" && $(".images").hasClass("hidden2") === true){
+  if (name !== "" && question1 === "Red" && question2 === "Pizza" && question3 === "chocolate" && question4 === "city" && $(".images").hasClass("hidden2")) {
       $("#ruby").removeClass("hidden");
-  } else {
-    alert("why is this happening");
+      $(".name").text(name);
+  // }else {
+  //   $(".name").text(name)
   }
 }
 
@@ -85,11 +83,3 @@ function surveyResult(name, question1, question2, question3, question4) {
   //     let fired_button = $("#img4").val();
   //     alert(fired_button);
   //   });
-
-
-
-
-
-
-// for finding value of users name
-// const name = $("input#users-name").val();
